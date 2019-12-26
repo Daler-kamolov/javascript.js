@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// операторы присваивание 
+		// =, +=, -=, /=, *=, %= 
+		var a = 5;
+			a += 5;
+			console.log(a); 
+		var b = 10;
+			b %= 3;
+			console.log(b);	
+		// операторы сравнения 
+		// ==, !=, ===, !==, >, >=, <, <=
+		var c = 10,
+			d = 10;
+			console.log(c == d);
+			console.log(c != d);
+		var e = 23,
+			f = 42;
+			console.log(e <= f);
+		// арифметические операторы 
+		// %, ++, --, -x, +x, **
+		var inc = 0;
+			inc++;
+			console.log(inc);
+		var dec = 0;
+			dec--;
+			console.log(dec);
+		var sqr = 4;
+			sqr ** sqr;
+			console.log(sqr);	
+		// унарный и бинарный оператор (5 * 2);
+		// 5 и 2 - это операнды	
+		// унарный оператор - это который применяется к одному операнду.
+		// бинарный оператор - это который применяется к двум операндам.
+
+		var x = 10;
+			x = -x;
+			console.log(x);		// унарный
+		var y = 20;
+		console.log( y - x);	// бинарный
+		// логические операторы 
+		// && , || , !  (и, или, не)
+		console.log( true && true);
+		console.log( !true);	
+		// строковый оператор 
+		// + к строкам и если внутри строк бывают числа тогда можно и -, /, * использовать!
+		var z = "Hello ";
+		var w = "world!";
+		console.log(z + w);  
+		console.log(z - w);  // выведет NaN
+
+
+		//Преобразование типов
+		// String, Number, Boolean
+		var count = 5;
+		console.log(typeof count)
+		count = String(count);
+		console.log(typeof count);		// String	
+
+
+		var newcount = "5";
+		console.log(typeof newcount);
+		newcount = Number(newcount);
+		console.log(typeof newcount);	// Number
+
+
+
+		var lastCount = "Fred";
+		console.log(typeof lastCount);
+		lastCount = Boolean(lastCount);
+		console.log(typeof lastCount);	//Boolean
+	</script>
+</body>
+</html>
